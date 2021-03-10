@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import "reset.css";
+
+body {
+  background-color: #f5f6fa;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.canvas {
+  height: 450px;
+  width: 350px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 8px #dcdde1, 0 3px 6px #dcdde1;
+}
+
+.controls {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls .controls__btns {
+  margin-bottom: 20px;
+}
+
+.controls__btns button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 15px;
+  width: 60px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #d1d8e0;
+  box-shadow: 0 5px 8px #dcdde1, 0 3px 6px #dcdde1;
+  color: #778ca3;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.controls__colors .controls__color:active,
+.controls__btns button:active {
+  transform: scale(0.95);
+}
+
+.controls .controls__colors {
+  display: flex;
+}
+
+.controls__colors .controls__color {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0px 1px;
+  box-shadow: 0 5px 8px #dcdde1, 0 3px 6px #dcdde1;
+}
+
+.controls .controls__range {
+  margin-bottom: 20px;
+}
